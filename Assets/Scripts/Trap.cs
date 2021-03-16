@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+
 public class Trap : MonoBehaviour
 {
     public GameObject trapPrefab;
@@ -11,6 +12,7 @@ public class Trap : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("hey");
         if (Input.GetMouseButtonDown(0))
         {
             if (!IsInvoking("throwTrap"))
