@@ -12,8 +12,7 @@ public class Trap : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("hey");
-        if (Input.GetMouseButtonDown(0))
+        if (OVRInput.GetDown(OVRInput.Button.One))
         {
             if (!IsInvoking("throwTrap"))
             {
@@ -35,6 +34,7 @@ public class Trap : MonoBehaviour
 
     public void playCloseSound()
     {
+        Debug.Log("palying close sound");
         bearRoar.Play();
         fleshRip.Play();
         trapSnap.Play();
