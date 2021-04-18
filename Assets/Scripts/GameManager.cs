@@ -1,4 +1,4 @@
-﻿using UnityEngine.UI;
+using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (OVRInput.GetDown(OVRInput.Button.Start))
         {
             if (isPaused == false)
             {

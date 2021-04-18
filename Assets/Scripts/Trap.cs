@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 
 public class Trap : MonoBehaviour
@@ -12,7 +12,7 @@ public class Trap : MonoBehaviour
 
     void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.One))
+        if (OVRInput.GetDown(OVRInput.Button.Two))
         {
             if (!IsInvoking("throwTrap"))
             {
