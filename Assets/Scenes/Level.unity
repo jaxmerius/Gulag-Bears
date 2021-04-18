@@ -4224,16 +4224,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669530412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3.8851433}
+  m_LocalPosition: {x: 0, y: 0, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 348271679}
-  m_Father: {fileID: 788123674}
-  m_RootOrder: 1
+  m_Father: {fileID: 783569026}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -39.000004, y: -10.999983}
+  m_AnchoredPosition: {x: -0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &669530414
@@ -5064,13 +5064,14 @@ GameObject:
   - component: {fileID: 783569026}
   - component: {fileID: 783569027}
   - component: {fileID: 783569029}
+  - component: {fileID: 783569028}
   m_Layer: 0
   m_Name: Pause Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &783569026
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5085,6 +5086,7 @@ RectTransform:
   - {fileID: 632414204}
   - {fileID: 168742028}
   - {fileID: 645982258}
+  - {fileID: 669530413}
   m_Father: {fileID: 788123674}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5101,6 +5103,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783569025}
   m_CullTransparentMesh: 0
+--- !u!114 &783569028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783569025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaf960227867044282d921171d2d7ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  pointer: {fileID: 0}
+  sortOrder: 0
 --- !u!223 &783569029
 Canvas:
   m_ObjectHideFlags: 0
@@ -5214,7 +5235,6 @@ RectTransform:
   m_LocalScale: {x: 0.0024273002, y: 0.0024273002, z: 0.0024273002}
   m_Children:
   - {fileID: 783569026}
-  - {fileID: 669530413}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
